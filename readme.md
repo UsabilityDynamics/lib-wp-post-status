@@ -1,7 +1,26 @@
 lib-wp-post-status
 ================
 
-Wordpress Post Status library for managing custom post statuses
+## Description
+Wordpress Post Status library for managing custom post statuses and assigning them to specific post types.
+
+##Examples
+```php
+
+/**
+ * Add custom post status 'Inactive' for 'post' and 'page' post types.
+ * 
+ * Note: it must be called before or on 'init' action hook.
+ * Note: all other arguments are equal to register_post_status() function 
+ * See: https://codex.wordpress.org/Function_Reference/register_post_status
+ */
+\UsabilityDynamics\CPS\Manager::set( array(
+  'id' => 'inactive',
+  'label' => 'Inactive',
+  'post_types' => array( 'post', 'pages' )
+) );
+
+```
 
 ## License
 
