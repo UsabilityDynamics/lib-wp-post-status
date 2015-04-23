@@ -108,8 +108,9 @@ namespace UsabilityDynamics\CPS {
        */
       public function update_post_status($states) {
         global $post;
+
         $status = get_query_var("post_status");
-        if ($status !== $this->id && $post->post_status === $this->id){
+        if ( is_object( $post ) && $status !== $this->id && $post->post_status === $this->id){
           return array($this->args[ 'label' ]);
         }
         return $states;
