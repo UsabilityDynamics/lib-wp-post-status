@@ -1,7 +1,7 @@
 {
-  "name": "usabilitydynamics/lib-wp-post-status",
+  "name": "udx/lib-wp-post-status",
   "description": "Registers custom post statuses and extends their functionality",
-  "homepage": "https://github.com/UsabilityDynamics/lib-wp-post-status",
+  "homepage": "https://github.com/udx/lib-wp-post-status",
   "keywords": [
     "wordpress",
     "post_status",
